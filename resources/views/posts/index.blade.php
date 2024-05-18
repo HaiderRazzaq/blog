@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-gray-100">
+    <x-app-layout>
     <div class="container mx-auto p-6">
         <h1 class="text-4xl font-bold mb-6">Blog Posts</h1>
         <a href="create_post.html" class="bg-blue-500 text-white py-2 px-4 rounded">Create New
@@ -36,6 +37,7 @@
             <!-- End of post example -->
         </div>
     </div>
+</x-app-layout>
 </body>
 
 </html>
