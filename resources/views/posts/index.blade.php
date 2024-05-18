@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog System</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-
-<body class="bg-gray-100">
     <x-app-layout>
     <div class="container mx-auto p-6">
         <h1 class="text-4xl font-bold mb-6">Blog Posts</h1>
@@ -38,6 +27,3 @@
         </div>
     </div>
 </x-app-layout>
-</body>
-
-</html>
