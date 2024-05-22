@@ -17,6 +17,10 @@ return new class extends Migration
             $table->string('body');
             $table->string('slug')->unique();
             $table->strng('image');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('comment_id');
+            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreign('comment_id')->references('id')->on('comments')->cascadeOnDelete();
             $table->timestamps();
         });
     }
