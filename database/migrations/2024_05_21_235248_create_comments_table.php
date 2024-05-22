@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('post_id');
+            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreign('post_id')->references('id')->on('comments')->cascadeOnDelete();
             $table->timestamps();
         });
     }
